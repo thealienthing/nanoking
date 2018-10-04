@@ -1,0 +1,46 @@
+#N canvas 1149 426 750 593 10;
+#X obj 321 384 tabread Dorian;
+#X obj 399 233 ctlin 2;
+#X floatatom 388 418 5 0 0 0 - - -, f 5;
+#X msg 276 107 \; Dorian 0 0 2 3 5 7 9 10 12 14 15 17 19 21 22 24 26
+27 29 31 33 34 36 38 39 41 43 45 46 48;
+#X obj 274 41 table Dorian 35;
+#X obj 276 81 r Dorian_Mode;
+#X obj 391 42 table Ionian 35;
+#X msg 275 182 \; Ionian 0 0 2 4 5 7 9 11 12 14 16 17 19 21 23 24 26
+28 29 31 33 35 36 38 40 41 43 45 47 48;
+#X obj 435 385 tabread Ionian;
+#X obj 435 402 spigot;
+#X obj 524 386 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 321 401 spigot;
+#X obj 409 385 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 326 307 r Dorian_Mode;
+#X obj 276 155 r Ionian_Mode;
+#X obj 439 306 r Ionian_Mode;
+#X obj 412 324 * 0;
+#X obj 326 329 delay 1;
+#X obj 439 328 delay 1;
+#X obj 399 255 / 4.5;
+#X obj 388 437 outlet;
+#X connect 0 0 11 0;
+#X connect 1 0 19 0;
+#X connect 2 0 20 0;
+#X connect 5 0 3 0;
+#X connect 8 0 9 0;
+#X connect 9 0 2 0;
+#X connect 10 0 9 1;
+#X connect 11 0 2 0;
+#X connect 12 0 11 1;
+#X connect 13 0 16 0;
+#X connect 13 0 17 0;
+#X connect 14 0 7 0;
+#X connect 15 0 16 0;
+#X connect 15 0 18 0;
+#X connect 16 0 12 0;
+#X connect 16 0 10 0;
+#X connect 17 0 12 0;
+#X connect 18 0 10 0;
+#X connect 19 0 0 0;
+#X connect 19 0 8 0;
