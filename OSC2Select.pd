@@ -15,13 +15,13 @@
 #X obj 172 60 stripnote;
 #X obj 204 302 s wave2Select;
 #X obj 122 536 *~ 0;
-#X obj 158 521 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 158 521 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 122 481 osc~ 440;
 #X obj 158 501 r wave2Select;
-#X msg 561 85 \; OSC_TRI2 sinesum 2051 1 0 -0.111111 0 0.04 0 -0.0204082
+#X msg 341 235 \; OSC_TRI2 sinesum 2051 1 0 -0.111111 0 0.04 0 -0.0204082
 0 0.0123457 0 -0.00826446 0;
-#X msg 562 132 \; OSC_TRI2 normalize 1;
+#X msg 342 282 \; OSC_TRI2 normalize 1;
 #N canvas 0 22 450 278 (subpatch) 0;
 #X array OSC_TRI2 2051 float 3;
 #A 0 -0.00191475 0 0.00191475 0.00382964 0.00574482 0.00766044 0.00957664
@@ -303,7 +303,7 @@
 -0.0153335 -0.0134147 -0.0114969 -0.00957995 -0.00766376 -0.00574814
 -0.00383295 -0.00191806 -3.31223e-06 0.00191144;
 #X coords 0 1 2051 -1 100 60 1 0 0;
-#X restore 560 22 graph;
+#X restore 340 172 graph;
 #X obj 253 486 phasor~ 440;
 #X obj 253 508 *~ 2051;
 #X obj 253 530 tabread4~ OSC_TRI2;
@@ -317,7 +317,7 @@
 1;
 #X obj 423 543 r wave2Select;
 #X obj 545 562 *~ 0;
-#X obj 580 549 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 580 549 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 545 527 phasor~ 440;
 #X obj 580 458 r wave2Select;

@@ -1,11 +1,11 @@
-#N canvas 204 429 1084 697 10;
+#N canvas 204 409 1084 697 10;
 #X floatatom 299 338 5 0 0 0 - - -, f 5;
 #X obj 331 374 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 331 389 0;
 #X obj 290 652 outlet~;
 #X obj 160 559 *~ 0;
-#X obj 194 540 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 194 540 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 331 406 s waveSelect;
 #X obj 194 559 r waveSelect;
@@ -294,10 +294,10 @@
 -0.0153335 -0.0134146 -0.0114969 -0.00957991 -0.00766375 -0.00574813
 -0.00383295 -0.00191805 -3.31222e-06 0.00191144;
 #X coords 0 1 2051 -1 100 60 1 0 0;
-#X restore 647 42 graph;
-#X msg 647 102 \; OSC_TRI sinesum 2051 1 0 -0.111111 0 0.04 0 -0.0204082
+#X restore 417 212 graph;
+#X msg 417 272 \; OSC_TRI sinesum 2051 1 0 -0.111111 0 0.04 0 -0.0204082
 0 0.0123457 0 -0.00826446 0;
-#X msg 647 145 \; OSC_TRI normalize 1;
+#X msg 417 315 \; OSC_TRI normalize 1;
 #X obj 290 583 tabread4~ OSC_TRI;
 #X obj 290 561 *~ 2051;
 #X obj 411 627 *~ 0;
