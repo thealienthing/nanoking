@@ -5,7 +5,7 @@ For a musical demonstration, follow the link:
 https://www.youtube.com/watch?v=3cz09tGON90&t=1s
 
 # nanoking
-A simple digital synthesizer made in pure data --and open source visual dsp environment created by Miller Puckett-- in 2016.
+A simple digital synthesizer made in pure data --an open source visual dsp environment created by Miller Puckett-- in 2016.
 
 This synthesizer has a few simple features. It has two separate oscillators each capable of four different standard waveforms:
 Sin, Sawtooth, Square and Triangle.
